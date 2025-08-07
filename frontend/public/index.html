@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Test Case Generator App with GitHub integration" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: https: http:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-HZAAuikqG6Et7X4yE1Z3XpJX98ZGtsX+zMzQ1xPoSP0qJzW1UJ2gMA/3WTvB4jqQ9zQcpBRcTrSK0syoMIkkxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Test Case Generator App</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Fira Code', monospace;
+        background-color: #0d1117;
+        color: #c9d1d9;
+      }
+      #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 1rem;
+      }
+      ::selection {
+        background: #238636;
+        color: #ffffff;
+      }
+      a {
+        color: #58a6ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #161b22;
+      }
+      ::-webkit-scrollbar-thumb {
+        background-color: #238636;
+        border-radius: 4px;
+      }
+      @media (max-width: 768px) {
+        #root, .container {
+          flex-direction: column !important;
+          padding: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

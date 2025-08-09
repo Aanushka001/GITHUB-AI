@@ -15,3 +15,232 @@ code {
 * {
   box-sizing: border-box;
 }
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Typography overrides */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+p {
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+/* Container overrides */
+.MuiContainer-root {
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* Paper and Card Styling */
+.MuiPaper-root {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.MuiPaper-root:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Styling */
+.MuiButton-root {
+  text-transform: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.MuiButton-contained {
+  background-color: #2ea043;
+  color: #fff;
+}
+
+.MuiButton-contained:hover {
+  background-color: #238636;
+}
+
+.MuiButton-outlined {
+  border: 2px solid #2ea043;
+  color: #ffffff;
+}
+
+.MuiButton-outlined:hover {
+  background-color: #238636;
+  border-color: #2ea043;
+  color: #ffffff;
+}
+
+/* Divider */
+.MuiDivider-root {
+  border-color: #30363d;
+}
+
+/* Grid spacing consistency */
+.MuiGrid-item {
+  padding: 1rem;
+}
+
+/* Hero section spacing */
+.hero-section {
+  margin-bottom: 4rem;
+}
+
+/* Responsive Typography (optional) */
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  .MuiButton-root {
+    width: 100%;
+  }
+}
+/* Global reset & GitHub-like base colors */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+p, .MuiTypography-body2 {
+  color: #8b949e;
+}
+
+/* Paper/Card container */
+.MuiPaper-root {
+  background-color: #161b22 !important;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 24px;
+  transition: all 0.3s ease;
+}
+
+/* TextField overrides */
+.MuiInputBase-root {
+  background-color: #0d1117 !important;
+  color: #ffffff !important;
+}
+
+.MuiFormLabel-root {
+  color: #8b949e !important;
+}
+
+.MuiFormHelperText-root {
+  color: #8b949e !important;
+}
+
+/* Buttons */
+.MuiButton-root {
+  text-transform: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.MuiButton-contained {
+  background-color: #238636 !important;
+  color: #ffffff !important;
+}
+
+.MuiButton-contained:hover {
+  background-color: #2ea043 !important;
+}
+
+.MuiButton-outlined {
+  border-color: #2ea043 !important;
+  color: #ffffff !important;
+}
+
+.MuiButton-outlined:hover {
+  background-color: #238636 !important;
+  color: #ffffff !important;
+}
+
+/* Alert customization */
+.MuiAlert-root {
+  background-color: #21262d !important;
+  color: #c9d1d9 !important;
+}
+
+/* Flex and layout helpers */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 32px;
+}
+
+.margin-top-sm {
+  margin-top: 16px;
+}
+
+.margin-top-md {
+  margin-top: 24px;
+}
+
+.margin-top-lg {
+  margin-top: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* File list tweaks */
+.file-list-wrapper {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-top: 1px solid #30363d;
+  padding-top: 16px;
+}
+
+/* Loading spinner centering */
+.centered-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .flex-between {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+}

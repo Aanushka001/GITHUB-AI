@@ -13,7 +13,7 @@ import {
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FileList from '../components/github/FileList';
 import axios from 'axios';
-
+import '../index.css'
 const RepositoryPage = () => {
   const navigate = useNavigate();
   const [repoDetails, setRepoDetails] = useState({ owner: '', repo: '', token: '' });

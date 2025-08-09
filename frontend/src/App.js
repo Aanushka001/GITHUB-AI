@@ -3,12 +3,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+// import Footer from './components/layout/Footer';
 import HomePage from './pages/HomePage';
 import RepositoryPage from './pages/RepositoryPage';
 import TestGenerationPage from './pages/TestGenerationPage';
 import './App.css';
-
+import Footer from './components/Footer';
 const theme = createTheme({
   palette: {
     mode: 'dark',
